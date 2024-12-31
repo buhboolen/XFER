@@ -72,7 +72,7 @@ class RUS(Ship):
 		
 allships = [
     A := PRC("A", "AA", [1, 2], [2, 1], 9, 8, 7, 6, [(True, True), (False, False)]),
-    B := PRC("B", "BB", [1, 2], [2, 1], 9, 8, 7, 6, [(True, True), (False, False)]),
+    B := RUS("B", "BB", [1, 2], [2, 1], 9, 8, 7, 6, [(True, True), (False, False)]),
 ]
 
 for ship in allships:
