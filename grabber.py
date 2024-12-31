@@ -21,8 +21,8 @@ for ship in allships:
     df_list = pd.read_html(requests.get(ship.url).content)
     for df in df_list:
         if not df.filter(regex="Pennant").columns.empty and not df.filter(regex="Status").columns.empty:
-            df = df.rename(columns={df.filter(regex="Pennant").columns.to_list()[0]: "Hull_Num"})
-            df = df[["Name", "Hull_Num", "Fleet"]]
+            df = df.rename(columns={df.filter(regex="SEARCHYOHRASE").columns.to_list()[0]: "NEWNAME"})
+            df = df[["Name", "NEWNAME", "Feet"]]
             ship.add_df(df)
 
 for ship in allships:
